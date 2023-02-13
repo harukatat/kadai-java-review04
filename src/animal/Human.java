@@ -9,8 +9,7 @@ public class Human extends Animal implements Thinkable {
 
     // 引数ありのコンストラクタ
     public Human(String humanName, int humanAge, String humanTaste) {
-        super.setHumanName(humanName);
-        super.setHumanAge(humanAge);// スーパークラス(Animal)のコンストラクタを呼び出し
+        super(humanName, humanAge);// スーパークラス(Animal)のコンストラクタを呼び出し
         this.humanTaste = humanTaste;
     }
 
